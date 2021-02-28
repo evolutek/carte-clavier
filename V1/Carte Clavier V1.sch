@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Carte Clavier"
-Date "2020-12-28"
-Rev "V1.0"
+Date "2021-02-28"
+Rev "V1.1"
 Comp "Evolutek<<"
 Comment1 ""
 Comment2 ""
@@ -267,8 +267,8 @@ $Comp
 L Device:R R11
 U 1 1 5FE6E06B
 P 6850 1450
-F 0 "R11" V 6800 1250 50  0000 L CNN
-F 1 "100" V 6800 1550 50  0000 L CNN
+F 0 "R11" V 6750 1300 50  0000 L CNN
+F 1 "100" V 6750 1500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6780 1450 50  0001 C CNN
 F 3 "~" H 6850 1450 50  0001 C CNN
 	1    6850 1450
@@ -285,9 +285,9 @@ F 3 "" H 6850 1650 50  0001 C CNN
 	1    6850 1650
 	1    0    0    -1  
 $EndComp
-Text Label 6850 700  2    50   ~ 0
-LRED
 Text Label 7050 700  0    50   ~ 0
+LRED
+Text Label 6850 700  2    50   ~ 0
 LGRE
 $Comp
 L power:+BATT #PWR01
@@ -602,22 +602,11 @@ F 3 "~" H 2500 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Dual_CACA D7
-U 1 1 5FF04866
-P 6950 1000
-F 0 "D7" V 6996 790 50  0000 R CNN
-F 1 "LED_Dual_CACA" H 7000 1250 50  0000 R CNN
-F 2 "ComponentsEvo:PLCC-4" H 6980 1000 50  0001 C CNN
-F 3 "~" H 6980 1000 50  0001 C CNN
-	1    6950 1000
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R12
 U 1 1 5FF06031
 P 7050 1450
-F 0 "R12" V 7000 1250 50  0000 L CNN
-F 1 "100" V 7000 1550 50  0000 L CNN
+F 0 "R12" V 7150 1300 50  0000 L CNN
+F 1 "100" V 7150 1500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6980 1450 50  0001 C CNN
 F 3 "~" H 7050 1450 50  0001 C CNN
 	1    7050 1450
@@ -769,4 +758,15 @@ $EndComp
 Connection ~ 2600 3000
 Wire Wire Line
 	2600 3000 2600 3050
+$Comp
+L Device:LED_Dual_AACC D7
+U 1 1 603C0A32
+P 6950 1000
+F 0 "D7" V 6800 700 50  0000 L CNN
+F 1 "LED_Dual_AACC" H 6700 1300 50  0000 L CNN
+F 2 "ComponentsEvo:PLCC-4" H 6980 1000 50  0001 C CNN
+F 3 "~" H 6980 1000 50  0001 C CNN
+	1    6950 1000
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
